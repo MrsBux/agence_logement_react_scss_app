@@ -1,0 +1,35 @@
+.banner {
+  margin: 50px 50px 0px 50px;
+  text-align: center;
+  position: relative;
+}
+.banner .banner__img {
+  border-radius: 25px;
+  opacity: 70%;
+  height: 223px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+.banner .banner__txt {
+  font-size: 200%;
+}
+
+.banner__calc_img {
+  position: absolute;
+  z-index: 1;
+}
+
+.banner__calc__txt {
+  position: absolute;
+  bottom: 25%;
+  right: 25%;
+  z-index: 2;
+  color: white;
+}
+
+.banner__img__apropos {
+  display: none;
+}
+
+/*# sourceMappingURL=banner.css.map */

@@ -1,0 +1,35 @@
+.banner {
+  margin: 25px 50px;
+  text-align: center;
+  position: relative;
+
+  .banner__img {
+    border-radius: 25px;
+    opacity: 0.7; // Utilisation décimale pour l'opacité
+    height: 223px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+
+  .banner__txt {
+    font-size: 200%;
+  }
+
+  &__calc_img {
+    position: absolute;
+    z-index: 1;
+  }
+
+  &__calc__txt {
+    position: absolute;
+    bottom: 25%;
+    right: 25%;
+    z-index: 2;
+    color: white;
+  }
+
+  &__img__apropos {
+    display: none;
+  }
+}
