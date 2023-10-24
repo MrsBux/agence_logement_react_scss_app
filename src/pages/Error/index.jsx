@@ -1,7 +1,9 @@
+import BlocError from "../../components/BlocErreur";
+
 function Error() {
   return (
     <div>
-      <h1>Oups 🙈 Cette page n'existe pas</h1>
+      <BlocError />
     </div>
   );
 }
