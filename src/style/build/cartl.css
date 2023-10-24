@@ -1,0 +1,27 @@
+.cartL {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+}
+.cartL__img {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  z-index: 1;
+  object-fit: cover;
+}
+.cartL__titre {
+  color: white;
+  position: absolute;
+  z-index: 2;
+  top: 268px;
+  left: 20px;
+}
+
+.container {
+  opacity: 100%;
+}
+
+/*# sourceMappingURL=cartl.css.map */

@@ -1,13 +1,12 @@
 import Banner from "../../components/Banner";
+import Gallery from "../../components/Gallery";
 
 function Home() {
   return (
-    <html>
+    <section>
       <Banner />
-      <div className="App">
-        <p> Home </p>
-      </div>
-    </html>
+      <Gallery />
+    </section>
   );
 }
 
