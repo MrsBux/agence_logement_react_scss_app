@@ -1,0 +1,27 @@
+$main-color: #ff6060;
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: $main-color;
+  margin: 117.5px;
+
+  &__code {
+    font-size: 288px;
+    font-weight: 700;
+    padding: 20px;
+    margin: 0px;
+  }
+
+  &__txt {
+    font-size: 36px;
+    padding-bottom: 60px;
+  }
+
+  &__link {
+    font-size: 18px;
+    color: $main-color;
+  }
+}

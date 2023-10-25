@@ -1,8 +1,24 @@
-.container_error {
+.error {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  gap: 30px;
+  color: #ff6060;
+  margin: 117.5px;
+}
+.error__code {
+  font-size: 288px;
+  font-weight: 700;
+  padding: 20px;
+  margin: 0px;
+}
+.error__txt {
+  font-size: 36px;
+  padding-bottom: 60px;
+}
+.error__link {
+  font-size: 18px;
+  color: #ff6060;
 }
 
 /*# sourceMappingURL=blocerreur.css.map */

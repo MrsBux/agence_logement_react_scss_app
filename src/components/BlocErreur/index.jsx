@@ -3,10 +3,10 @@ import "../../style/build/blocerreur.css";
 
 function BlocError() {
   return (
-    <div className="container_error">
-      <p className="code_error"> 404 </p>
-      <p className="txt_error"> Oups 🙈 Cette page n'existe pas </p>
-      <Link to="/" className="lien_error">
+    <div className="error">
+      <p className="error__code"> 404 </p>
+      <p className="error__txt"> Oups 🙈 Cette page n'existe pas </p>
+      <Link to="/" className="error__link">
         {" "}
         Retourner sur la page d'accueil{" "}
       </Link>
