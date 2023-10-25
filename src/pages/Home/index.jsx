@@ -1,10 +1,13 @@
 import Banner from "../../components/Banner";
 import Gallery from "../../components/Gallery";
+import ImageBannerHome from "../../assets/img_banner_home.jpg";
 
 function Home() {
+  const titleHome = "Chez vous, partout et ailleurs.";
+
   return (
     <section>
-      <Banner />
+      <Banner key="img-banner-homme" img={ImageBannerHome} title={titleHome} />
       <Gallery />
     </section>
   );

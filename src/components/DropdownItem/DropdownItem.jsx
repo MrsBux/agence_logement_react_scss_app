@@ -7,7 +7,7 @@ function DropdownItem({ title, description }) {
   return isOpen ? (
     <div className="item">
       <div className="item__block item__block__opened">
-        <h3 className="item__block__title"> {title} title </h3>
+        <h3 className="item__block__title"> {title} </h3>
         <button
           className="item__block__button"
           onClick={() => setIsOpen(false)}
@@ -17,13 +17,13 @@ function DropdownItem({ title, description }) {
         </button>
       </div>
       <div className="item__txt">
-        <p className="item__txt__description"> {description} description </p>
+        <p className="item__txt__description"> {description} </p>
       </div>{" "}
     </div>
   ) : (
     <div className="item">
       <div className="item__block ">
-        <h3 className="item__block__title"> {title} title </h3>
+        <h3 className="item__block__title"> {title} </h3>
         <button className="item__block__button" onClick={() => setIsOpen(true)}>
           ^
         </button>

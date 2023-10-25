@@ -1,3 +1,7 @@
-.titremenu {
-  color: blue;
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 50px 0px 50px 0px;
 }
