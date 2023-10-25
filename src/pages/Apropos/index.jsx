@@ -1,9 +1,10 @@
 import DropdownMenu from "../../components/DropdownMenu";
+import Banner from "../../components/Banner";
 
 function Apropos() {
   return (
     <div>
-      <h1>Apropos 🧮</h1>
+      <Banner />
       <DropdownMenu />
     </div>
   );
