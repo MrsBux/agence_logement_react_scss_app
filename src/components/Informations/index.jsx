@@ -1,7 +1,7 @@
 import "../../style/build/informations.css";
 import Hote from "./Hote";
 import Rating from "./Rating";
-import TagList from "./TagList";
+import Tag from "./TagList/Tag/Tag";
 import DropDownInfos from "./DropDownInfos";
 import Title from "./Title";
 import datas from "../../datas/data.json";
@@ -22,8 +22,17 @@ function Informations() {
               />
             ))}
           </div>
-          <div className="informations__container1__genral__taglist">
-            <TagList />
+          <div className="informations__container1__general__taglist">
+            {logementsessai.map((logement, index) => (
+              <div
+                className="informations__container1__general__taglist"
+                key={`tagContainer_${logement.id}`}
+              >
+                {logement.tags.map((tag, tagIndex) => (
+                  <Tag key={`tag_${logement.id}_${tagIndex}`} tag={tag} />
+                ))}
+              </div>
+            ))}
           </div>
         </div>
         <div className="informations__container1__utiles">

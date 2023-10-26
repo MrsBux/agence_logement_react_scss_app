@@ -1,0 +1,17 @@
+$main-color: #ff6060;
+
+.tagbox {
+  background-color: $main-color;
+  border-radius: 10px;
+  width: 115px;
+  padding: 2.5px;
+
+  &__name {
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0px;
+  }
+}

@@ -7,5 +7,17 @@
   justify-content: space-between;
   align-items: center;
 }
+.informations__container1__general {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.informations__container1__general__taglist {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
 
 /*# sourceMappingURL=informations.css.map */
