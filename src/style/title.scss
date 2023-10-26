@@ -1,0 +1,22 @@
+$main-color: #ff6060;
+
+.title {
+  color: $main-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+
+  &__name {
+    font-size: 36px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  &__location {
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+  }
+}

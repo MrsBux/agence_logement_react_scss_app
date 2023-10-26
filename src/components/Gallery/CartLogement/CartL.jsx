@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/build/cartl.css";
+import "../../../style/build/cartl.css";
 
 function CartL({ imgsrc, title }) {
   return (

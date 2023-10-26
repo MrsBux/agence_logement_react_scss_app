@@ -1,0 +1,9 @@
+.informations {
+  margin: 25px 100px;
+  &__container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

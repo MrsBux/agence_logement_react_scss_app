@@ -1,0 +1,20 @@
+.title {
+  color: #ff6060;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.title__name {
+  font-size: 36px;
+  padding: 0px;
+  margin: 0px;
+}
+.title__location {
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=title.css.map */
