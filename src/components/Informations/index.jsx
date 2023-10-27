@@ -48,7 +48,9 @@ function Informations() {
             ))}
           </div>
           <div className="informations__container1__utiles__rating">
-            <Rating />{" "}
+            {logementsessai.map((logement, index) => (
+              <Rating key={`rate_${logement.id}`} rating={logement.rating} />
+            ))}
           </div>
         </div>
       </div>
