@@ -1,3 +1,30 @@
-
+.host {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.host__container1 {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  color: #ff6060;
+  width: 93px;
+  height: 80px;
+  font-size: 18px;
+  margin: 0px;
+}
+.host__container2 {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.host__container2__picture {
+  max-width: 64px;
+  max-height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
 /*# sourceMappingURL=hote.css.map */

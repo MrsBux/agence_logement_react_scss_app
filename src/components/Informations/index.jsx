@@ -9,6 +9,8 @@ import datas from "../../datas/data.json";
 function Informations() {
   const logements = Array.isArray(datas) ? datas : [];
   const logementsessai = logements.slice(0, 1);
+
+  console.log(logementsessai);
   return (
     <section className="informations">
       <div className="informations__container1">
@@ -36,10 +38,16 @@ function Informations() {
           </div>
         </div>
         <div className="informations__container1__utiles">
-          <div className="informations__utiles__hote">
-            <Hote />
+          <div className="informations__container1__utiles__hote">
+            {logementsessai.map((logement, index) => (
+              <Hote
+                key={`hote_${logement.id}`}
+                name={logement.host.name}
+                picture={logement.host.picture}
+              />
+            ))}
           </div>
-          <div className="informations__utiles__rating">
+          <div className="informations__container1__utiles__rating">
             <Rating />{" "}
           </div>
         </div>
