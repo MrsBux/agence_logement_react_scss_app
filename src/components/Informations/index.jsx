@@ -2,7 +2,7 @@ import "../../style/build/informations.css";
 import Hote from "./Hote";
 import Rating from "./Rating";
 import Tag from "./TagList/Tag/Tag";
-import DropDownInfos from "./DropDownInfos";
+import DropdownItem from "../../components/DropdownItem/DropdownItem";
 import Title from "./Title";
 import datas from "../../datas/data.json";
 
@@ -54,8 +54,35 @@ function Informations() {
           </div>
         </div>
       </div>
+
       <div className="informations__container2">
-        <DropDownInfos />
+        <div className="informations__container2__description">
+          {logementsessai.map((logement, index) => (
+            <DropdownItem
+              key={`description_${logement.id}`}
+              title={"Description"}
+              description={logement.description}
+            />
+          ))}
+        </div>
+
+        <div className="informations__container2__equipments">
+          {logementsessai.map((logement, index) => (
+            <DropdownItem
+              key={`equipments_${logement.id}`}
+              title={"Equipements"}
+              description={
+                <ul>
+                  {logement.equipments.map((equipment, index) => (
+                    <li className="equipments_list" key={index}>
+                      {equipment}
+                    </li>
+                  ))}
+                </ul>
+              }
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

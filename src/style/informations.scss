@@ -1,5 +1,5 @@
 .informations {
-  margin: 25px 100px 25px 100px;
+  margin: 25px 100px;
   &__container1 {
     display: flex;
     flex-direction: row;
@@ -17,5 +17,25 @@
         gap: 20px;
       }
     }
+  }
+
+  &__container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 76px;
+    margin-top: 50px;
+    width: 1240px;
+  }
+}
+
+.item {
+  &__block {
+    width: 582px;
+  }
+
+  &__txt {
+    width: 582px;
   }
 }

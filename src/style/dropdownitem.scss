@@ -6,7 +6,6 @@ $main-color: #ff6060;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1050px;
   color: $main-color;
 
   &__block {
@@ -16,7 +15,6 @@ $main-color: #ff6060;
     align-items: center;
     background-color: $main-color;
     font-size: 24px;
-    width: 988px;
     height: 32px;
     border-radius: 5px;
     padding: 10px 20px 10px 15px;
@@ -43,6 +41,5 @@ $main-color: #ff6060;
     border-radius: 0px 0px 5px 5px;
     font-size: 18px;
     padding: 18px;
-    width: 988px;
   }
 }

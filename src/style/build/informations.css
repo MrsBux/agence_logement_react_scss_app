@@ -1,5 +1,5 @@
 .informations {
-  margin: 25px 100px 25px 100px;
+  margin: 25px 100px;
 }
 .informations__container1 {
   display: flex;
@@ -18,6 +18,22 @@
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
+}
+.informations__container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 76px;
+  margin-top: 50px;
+  width: 1240px;
+}
+
+.item__block {
+  width: 582px;
+}
+.item__txt {
+  width: 582px;
 }
 
 /*# sourceMappingURL=informations.css.map */
