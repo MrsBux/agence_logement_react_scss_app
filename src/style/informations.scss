@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     &__general {
       display: flex;
       flex-direction: column;
@@ -26,16 +27,17 @@
     align-items: flex-start;
     gap: 76px;
     margin-top: 50px;
-    width: 1240px;
+    width: 100%;
   }
 }
 
 .item {
+  width: 44%;
   &__block {
-    width: 582px;
+    width: 100%;
   }
 
   &__txt {
-    width: 582px;
+    width: 44%;
   }
 }

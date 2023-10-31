@@ -6,83 +6,69 @@ import DropdownItem from "../../components/DropdownItem/DropdownItem";
 import Title from "./Title";
 import datas from "../../datas/data.json";
 
-function Informations() {
+function Informations({ logementId }) {
   const logements = Array.isArray(datas) ? datas : [];
-  const logementsessai = logements.slice(0, 1);
+  const logement = logements.find((logement) => logement.id === logementId);
 
-  console.log(logementsessai);
   return (
     <section className="informations">
       <div className="informations__container1">
         <div className="informations__container1__general">
           <div className="informations__container1__general__title">
-            {logementsessai.map((logement, index) => (
-              <Title
-                key={`string_${logement.id}`}
-                title={logement.title}
-                location={logement.location}
-              />
-            ))}
+            <Title
+              key={`string_${logement.id}`}
+              title={logement.title}
+              location={logement.location}
+            />
           </div>
+
           <div className="informations__container1__general__taglist">
-            {logementsessai.map((logement, index) => (
+            {logement.tags.map((tag, tagIndex) => (
               <div
                 className="informations__container1__general__taglist"
                 key={`tagContainer_${logement.id}`}
               >
-                {logement.tags.map((tag, tagIndex) => (
-                  <Tag key={`tag_${logement.id}_${tagIndex}`} tag={tag} />
-                ))}
+                <Tag key={`tag_${logement.id}_${tagIndex}`} tag={tag} />
               </div>
             ))}
           </div>
         </div>
+
         <div className="informations__container1__utiles">
           <div className="informations__container1__utiles__hote">
-            {logementsessai.map((logement, index) => (
-              <Hote
-                key={`hote_${logement.id}`}
-                name={logement.host.name}
-                picture={logement.host.picture}
-              />
-            ))}
+            <Hote
+              key={`hote_${logement.id}`}
+              name={logement.host.name}
+              picture={logement.host.picture}
+            />
           </div>
           <div className="informations__container1__utiles__rating">
-            {logementsessai.map((logement, index) => (
-              <Rating key={`rate_${logement.id}`} rating={logement.rating} />
-            ))}
+            <Rating key={`rate_${logement.id}`} rating={logement.rating} />
+            {/* ))} */}
           </div>
         </div>
       </div>
 
       <div className="informations__container2">
-        <div className="informations__container2__description">
-          {logementsessai.map((logement, index) => (
-            <DropdownItem
-              key={`description_${logement.id}`}
-              title={"Description"}
-              description={logement.description}
-            />
-          ))}
-        </div>
+        <DropdownItem
+          key={`description_${logement.id}`}
+          title={"Description"}
+          description={logement.description}
+        />
 
-        <div className="informations__container2__equipments">
-          {logementsessai.map((logement, index) => (
-            <DropdownItem
-              key={`equipments_${logement.id}`}
-              title={"Equipements"}
-              description={
-                <ul>
-                  {logement.equipments.map((equipment, index) => (
-                    <li className="equipments_list" key={index}>
-                      {equipment}
-                    </li>
-                  ))}
-                </ul>
-              }
-            />
-          ))}
-        </div>
+        <DropdownItem
+          key={`equipments_${logement.id}`}
+          title={"Equipements"}
+          description={
+            <ul>
+              {logement.equipments.map((equipment, index) => (
+                <li className="equipments_list" key={index}>
+                  {equipment}
+                </li>
+              ))}
+            </ul>
+          }
+        />
       </div>
     </section>
   );

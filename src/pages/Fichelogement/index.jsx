@@ -1,12 +1,19 @@
-import Slideshow from "../../components/Slideshow";
+import { useParams } from "react-router-dom";
+import Carrousel from "../../components/Carrousel";
 import Informations from "../../components/Informations";
+import datas from "../../datas/data.json";
 
 function Fichelogement() {
+  const { id } = useParams();
+  const logement = datas.find((logement) => logement.id === id);
+
+  if (!logement) {
+    return <div>Logement non trouvé.</div>;
+  }
   return (
-    <div>
-      <h1>Fiche logement 🧮</h1>
-      <Slideshow />
-      <Informations />
+    <div className="section_logement">
+      <Carrousel logementId={id} />
+      <Informations logementId={id} />
     </div>
   );
 }

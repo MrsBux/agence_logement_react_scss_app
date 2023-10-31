@@ -6,6 +6,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .informations__container1__general {
   display: flex;
@@ -26,14 +27,17 @@
   align-items: flex-start;
   gap: 76px;
   margin-top: 50px;
-  width: 1240px;
+  width: 100%;
 }
 
+.item {
+  width: 44%;
+}
 .item__block {
-  width: 582px;
+  width: 100%;
 }
 .item__txt {
-  width: 582px;
+  width: 44%;
 }
 
 /*# sourceMappingURL=informations.css.map */
