@@ -2,7 +2,8 @@
   background-color: #ff6060;
   border-radius: 10px;
   width: 115px;
-  padding: 2.5px;
+  padding: 5px;
+  height: 51px;
 }
 .tagbox__name {
   color: white;

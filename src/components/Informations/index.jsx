@@ -26,7 +26,7 @@ function Informations({ logementId }) {
             {logement.tags.map((tag, tagIndex) => (
               <div
                 className="informations__container1__general__taglist"
-                key={`tagContainer_${logement.id}`}
+                key={`tagContainer_${logement.id}_${tagIndex}`}
               >
                 <Tag key={`tag_${logement.id}_${tagIndex}`} tag={tag} />
               </div>

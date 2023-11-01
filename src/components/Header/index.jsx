@@ -12,7 +12,6 @@ function Header() {
       <nav>
         <Link to="/">Accueil</Link>
         <Link to="/apropos"> A propos</Link>
-        {/* <Link to="/fichelogement"> Fiche logement</Link> */}
       </nav>
     </header>
   );

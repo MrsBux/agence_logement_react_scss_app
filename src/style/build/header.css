@@ -5,18 +5,83 @@ header {
   justify-content: space-between;
   margin: 0px 100px 0px 100px;
 }
+@media all and (min-width: 1441px) {
+  header {
+    margin: 0px 120px 0px 120px;
+  }
+}
+@media all and (min-width: 1025px) and (max-width: 1440px) {
+  header {
+    margin: 0px 100px 0px 100px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    margin: 0px 75px 0px 75px;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 768px) {
+  header {
+    margin: 0px 50px 0px 50px;
+  }
+}
+@media all and (max-width: 640px) {
+  header {
+    margin: 0px 20px 0px 20px;
+  }
+}
+
+@media all and (min-width: 641px) and (max-width: 768px) {
+  img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+@media all and (max-width: 640px) {
+  img {
+    width: 145px;
+    height: auto;
+    object-fit: contain;
+  }
+}
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   gap: 15px;
+}
+@media all and (max-width: 640px) {
+  nav {
+    gap: 5px;
+  }
 }
 nav a {
   padding-left: 30px;
   font-size: 24px;
   color: #ff6060;
   text-decoration: none;
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  nav a {
+    padding-left: 15px;
+    font-size: 20px;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 768px) {
+  nav a {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 640px) {
+  nav a {
+    text-transform: uppercase;
+    padding-left: 5px;
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

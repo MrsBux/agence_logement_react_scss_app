@@ -7,7 +7,7 @@ function Home() {
 
   return (
     <section>
-      <Banner key="img-banner-homme" img={ImageBannerHome} title={titleHome} />
+      <Banner key="img-banner-home" img={ImageBannerHome} title={titleHome} />
       <Gallery />
     </section>
   );

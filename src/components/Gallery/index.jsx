@@ -6,12 +6,11 @@ import datas from "../../datas/data.json";
 
 function Gallery() {
   const logements = Array.isArray(datas) ? datas : [];
-  const firstSixLogements = logements.slice(0, 6);
 
   return (
     <section className="gallery">
       <div className="gallery__container">
-        {firstSixLogements.map((logement, index) => (
+        {logements.map((logement, index) => (
           <Link key={logement.id} to={`/fichelogement/${logement.id}`}>
             <CartL
               key={logement.id}

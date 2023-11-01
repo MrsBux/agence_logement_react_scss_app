@@ -1,35 +1,60 @@
 .banner {
   margin: 25px 100px 25px 100px;
   text-align: center;
-  position: relative;
 
-  .banner__img {
-    border-radius: 25px;
-    // opacity: 0.7; // Utilisation décimale pour l'opacité
-    height: 223px;
+  @media all and (min-width: 1441px) {
+    margin: 25px 120px;
+  }
+
+  @media all and (min-width: 1025px) and (max-width: 1440px) {
+    margin: 25px 100px;
+  }
+
+  @media all and (min-width: 769px) and (max-width: 1024px) {
+    margin: 25px 75px;
+  }
+
+  @media all and (min-width: 641px) and (max-width: 768px) {
+    margin: 25px 50px;
+  }
+
+  @media all and (max-width: 640px) {
+    margin: 20px 20px;
+  }
+
+  &__calc {
     width: 100%;
-    object-fit: cover;
-    // filter: brightness(0.6);
-  }
-
-  .banner__txt {
-    font-size: 200%;
-  }
-
-  &__calc_img {
-    position: absolute;
+    position: relative;
     z-index: 1;
-  }
+    max-height: 225px;
 
-  &__calc__txt {
-    position: absolute;
-    bottom: 25%;
-    right: 25%;
-    z-index: 2;
-    color: white;
-  }
+    &__img {
+      border-radius: 25px;
+      height: 223px;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(70%);
+    }
 
-  &__img__apropos {
-    display: none;
+    &__txt__home {
+      position: relative;
+      bottom: 140px;
+      z-index: 2;
+      font-size: 48px;
+      color: white;
+      margin: 0px;
+
+      @media all and (min-width: 769px) and (max-width: 1024px) {
+        font-size: 36px;
+      }
+
+      @media all and (min-width: 641px) and (max-width: 768px) {
+        font-size: 30px;
+      }
+
+      @media all and (max-width: 640px) {
+        font-size: 24px;
+      }
+    }
   }
 }

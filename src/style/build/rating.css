@@ -1,5 +1,9 @@
-.rat {
-  color: green;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
 }
 
 /*# sourceMappingURL=rating.css.map */
