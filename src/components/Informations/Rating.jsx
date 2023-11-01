@@ -4,9 +4,9 @@ import starInactive from "../../assets/Vector.svg";
 
 function Rating({ rating }) {
   if (rating >= 0 && rating <= 5) {
-    const ratingValue = parseInt(rating); // Convertir la valeur "rating" en nombre entier
-    const starsActive = Array(ratingValue).fill(null); // Créer un tableau d'étoiles actives
-    const starsInactive = Array(5 - ratingValue).fill(null); // Créer un tableau d'étoiles inactives
+    const ratingValue = parseInt(rating);
+    const starsActive = Array(ratingValue).fill(null);
+    const starsInactive = Array(5 - ratingValue).fill(null);
 
     return (
       <div className="container">
