@@ -1,31 +1,10 @@
+section {
+  margin: 0px;
+}
+
 .banner {
-  margin: 25px 100px 25px 100px;
   text-align: center;
-}
-@media all and (min-width: 1441px) {
-  .banner {
-    margin: 25px 120px;
-  }
-}
-@media all and (min-width: 1025px) and (max-width: 1440px) {
-  .banner {
-    margin: 25px 100px;
-  }
-}
-@media all and (min-width: 769px) and (max-width: 1024px) {
-  .banner {
-    margin: 25px 75px;
-  }
-}
-@media all and (min-width: 641px) and (max-width: 768px) {
-  .banner {
-    margin: 25px 50px;
-  }
-}
-@media all and (max-width: 640px) {
-  .banner {
-    margin: 20px 20px;
-  }
+  margin: 0px;
 }
 .banner__calc {
   width: 100%;
@@ -55,12 +34,12 @@
 }
 @media all and (min-width: 641px) and (max-width: 768px) {
   .banner__calc__txt__home {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 @media all and (max-width: 640px) {
   .banner__calc__txt__home {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 

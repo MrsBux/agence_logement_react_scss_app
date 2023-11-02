@@ -34,26 +34,26 @@ footer {
   }
 }
 
-p {
+.droits {
   color: white;
   font-size: 24px;
 }
 @media all and (min-width: 769px) and (max-width: 1024px) {
-  p {
+  .droits {
     font-size: 20px;
     width: 418px;
     text-align: center;
   }
 }
 @media all and (min-width: 641px) and (max-width: 768px) {
-  p {
+  .droits {
     font-size: 16px;
     width: 323px;
     text-align: center;
   }
 }
 @media all and (max-width: 640px) {
-  p {
+  .droits {
     font-size: 12px;
     width: 134px;
     text-align: center;

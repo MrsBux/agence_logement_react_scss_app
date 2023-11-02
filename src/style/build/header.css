@@ -32,14 +32,14 @@ header {
 }
 
 @media all and (min-width: 641px) and (max-width: 768px) {
-  img {
+  header img {
     width: 180px;
     height: auto;
     object-fit: contain;
   }
 }
 @media all and (max-width: 640px) {
-  img {
+  header img {
     width: 145px;
     height: auto;
     object-fit: contain;

@@ -2,7 +2,7 @@ import "../../style/build/informations.css";
 import Hote from "./Hote";
 import Rating from "./Rating";
 import Tag from "./TagList/Tag/Tag";
-import DropdownItem from "../../components/DropdownItem/DropdownItem";
+import Collapse from "../Collapse/Collapse";
 import Title from "./Title";
 import datas from "../../datas/data.json";
 
@@ -50,25 +50,30 @@ function Informations({ logementId }) {
       </div>
 
       <div className="informations__container2">
-        <DropdownItem
-          key={`description_${logement.id}`}
-          title={"Description"}
-          description={logement.description}
-        />
-
-        <DropdownItem
-          key={`equipments_${logement.id}`}
-          title={"Equipements"}
-          description={
-            <ul>
-              {logement.equipments.map((equipment, index) => (
-                <li className="equipments_list" key={index}>
-                  {equipment}
-                </li>
-              ))}
-            </ul>
-          }
-        />
+        <div className="informations__container2__descriptions">
+          <Collapse
+            key={`description_${logement.id}`}
+            title={"Description"}
+            description={logement.description}
+          />{" "}
+        </div>
+        <div className="informations__container2__equipments">
+          <Collapse
+            key={`equipments_${logement.id}`}
+            title={"Equipements"}
+            description={
+              <div className="equipments">
+                <ul>
+                  {logement.equipments.map((equipment, index) => (
+                    <li className="equipments_list" key={index}>
+                      {equipment}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            }
+          />{" "}
+        </div>
       </div>
     </section>
   );

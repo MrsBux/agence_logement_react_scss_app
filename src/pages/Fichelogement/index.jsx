@@ -7,13 +7,14 @@ import { Navigate } from "react-router-dom";
 function Fichelogement() {
   const { id } = useParams();
   const logement = datas.find((logement) => logement.id === id);
+  const pictures = logement.pictures;
 
   if (!logement) {
     return <Navigate to="*" replace={true} />;
   }
   return (
     <div className="section_logement">
-      <Carrousel logementId={id} />
+      <Carrousel logementId={id} logement={logement} pictures={pictures} />
       <Informations logementId={id} />
     </div>
   );

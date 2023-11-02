@@ -1,12 +1,12 @@
 $main-color: #ff6060;
 
 .item {
-  margin: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: $main-color;
+  color: white;
 
   &__block {
     display: flex;
@@ -14,32 +14,36 @@ $main-color: #ff6060;
     justify-content: space-between;
     align-items: center;
     background-color: $main-color;
-    font-size: 24px;
-    height: 32px;
-    border-radius: 5px;
-    padding: 10px 20px 10px 15px;
-    margin: 0px;
-    color: white;
+    height: 52px;
+    width: 100%;
 
-    &__title {
-      font-size: 24px;
-    }
     &__button {
       background-color: $main-color;
       border: none;
       color: white;
-      font-size: 24px;
+      padding-right: 15px;
     }
-  }
-
-  &__block__opened {
-    border-radius: 5px 5px 0px 0px;
   }
 
   &__txt {
     background-color: #f6f6f6;
+    color: $main-color;
     border-radius: 0px 0px 5px 5px;
     font-size: 18px;
     padding: 18px;
+    width: fit-content;
+    border-radius: 0px 0px 10px 10px;
+
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+      font-size: 16px;
+    }
+
+    @media all and (min-width: 641px) and (max-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media all and (max-width: 640px) {
+      font-size: 14px;
+    }
   }
 }
