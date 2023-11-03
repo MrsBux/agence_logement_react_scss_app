@@ -25,4 +25,12 @@
     object-fit: cover;
     position: relative;
   }
+
+  &__counter {
+    position: absolute;
+    z-index: 3;
+    color: white;
+    font-size: 24px;
+    top: 357px;
+  }
 }

@@ -1,7 +1,10 @@
 .gallery {
   margin: 0px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 25px;
   cursor: pointer;
 }
 .gallery__container {
@@ -53,6 +56,14 @@
     justify-items: center;
     align-items: center;
   }
+}
+.gallery__button .seeMore,
+.gallery__button .seeLess {
+  border: none;
+  color: #ff6060;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=gallery.css.map */

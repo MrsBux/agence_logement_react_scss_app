@@ -17,7 +17,7 @@ function Carrousel({ logementId, logement, pictures }) {
   };
 
   const compteur = () => {
-    return `${currentImageIndex}/${pictures.lenght}`;
+    return `${currentImageIndex + 1}/${pictures.length}`;
   };
 
   return (
@@ -47,6 +47,8 @@ function Carrousel({ logementId, logement, pictures }) {
             src={pictures[currentImageIndex]}
             alt="logement"
           />
+
+          <div className="carroussel__counter">{compteur()}</div>
         </>
       )}
     </div>
