@@ -42,6 +42,11 @@ header img {
   }
 }
 
+nav a.active {
+  text-decoration: underline; // Exemple : souligner le lien actif
+  color: $main-color; // Exemple : changer la couleur du texte pour le lien actif
+}
+
 nav {
   display: flex;
   flex-direction: row;

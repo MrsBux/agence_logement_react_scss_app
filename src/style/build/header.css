@@ -45,6 +45,11 @@ header {
   }
 }
 
+nav a.active {
+  text-decoration: underline;
+  color: #ff6060;
+}
+
 nav {
   display: flex;
   flex-direction: row;
