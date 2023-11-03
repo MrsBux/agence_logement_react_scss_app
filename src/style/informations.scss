@@ -41,23 +41,6 @@
           padding: 10px 20px 10px 10px;
         }
       }
-
-      .item__txt__open {
-        min-height: 200px;
-        max-height: 1000px;
-
-        @media all and (min-width: 769px) and (max-width: 1024px) {
-          min-height: 300px;
-        }
-
-        @media all and (min-width: 641px) and (max-width: 768px) {
-          min-height: 400px;
-        }
-
-        @media all and (max-width: 640px) {
-          min-height: none;
-        }
-      }
     }
 
     &__equipments {
@@ -75,27 +58,10 @@
         min-width: 100%;
         padding: 0px;
 
-        &__open {
-          min-height: 200px;
-          max-height: 1000px;
-
-          @media all and (min-width: 769px) and (max-width: 1024px) {
-            min-height: 300px;
-          }
-
-          @media all and (min-width: 641px) and (max-width: 768px) {
-            min-height: 400px;
-
-            @media all and (max-width: 640px) {
-              min-height: none;
-            }
-          }
-
-          ul {
-            margin: 0px;
-            padding: 0px;
-            list-style-type: none;
-          }
+        ul {
+          margin: 0px;
+          padding: 0px;
+          list-style-type: none;
         }
 
         h3 {

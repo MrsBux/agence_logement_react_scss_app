@@ -1,0 +1,26 @@
+main {
+  margin: 25px 100px 25px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @media all and (min-width: 1441px) {
+    margin: 25px 120px;
+  }
+
+  @media all and (min-width: 1025px) and (max-width: 1440px) {
+    margin: 25px 100px;
+  }
+
+  @media all and (min-width: 769px) and (max-width: 1024px) {
+    margin: 25px 75px;
+  }
+
+  @media all and (min-width: 641px) and (max-width: 768px) {
+    margin: 25px 50px;
+  }
+
+  @media all and (max-width: 640px) {
+    margin: 20px 20px;
+  }
+}

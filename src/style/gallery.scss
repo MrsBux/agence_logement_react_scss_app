@@ -1,27 +1,8 @@
 .gallery {
-  margin: 50px 100px 50px 100px;
+  margin: 0px;
   display: flex;
   justify-content: center;
-
-  @media all and (min-width: 1441px) {
-    margin: 0px 120px 0px 120px;
-  }
-
-  @media all and (min-width: 1025px) and (max-width: 1440px) {
-    margin: 0px 100px 0px 100px;
-  }
-
-  @media all and (min-width: 769px) and (max-width: 1024px) {
-    margin: 0px 75px 0px 75px;
-  }
-
-  @media all and (min-width: 641px) and (max-width: 768px) {
-    margin: 0px 50px 0px 50px;
-  }
-
-  @media all and (max-width: 640px) {
-    margin: 0px 20px 0px 20px;
-  }
+  cursor: pointer;
 
   &__container {
     width: fit-content;
@@ -29,18 +10,10 @@
     background-color: #f6f6f6;
     border-radius: 25px;
     display: grid;
-    gap: 50px;
+    gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-
-    @media all and (min-width: 1441px) {
-      margin: 0px 120px 0px 120px;
-    }
-
-    @media all and (min-width: 1153px) and (max-width: 1440px) {
-      margin: 0px 100px 0px 100px;
-    }
 
     @media all and (min-width: 1025px) and (max-width: 1152px) {
       padding: 30px;
@@ -61,7 +34,8 @@
     }
 
     @media all and (min-width: 641px) and (max-width: 768px) {
-      padding: 20px;
+      width: 100%;
+      padding: 0px;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -70,8 +44,6 @@
     }
 
     @media all and (max-width: 640px) {
-      padding: 20px;
-      display: flex;
       flex-direction: column;
       gap: 20px;
       justify-items: center;

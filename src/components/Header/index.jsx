@@ -6,7 +6,9 @@ function Header() {
   return (
     <header>
       <div className="App-logo">
-        <img src={logo} alt="logo kasa"></img>
+        <Link to="/">
+          <img src={logo} alt="logo kasa"></img>{" "}
+        </Link>
       </div>
 
       <nav>

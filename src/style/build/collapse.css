@@ -20,6 +20,7 @@
   border: none;
   color: white;
   padding-right: 15px;
+  cursor: pointer;
 }
 .item__txt {
   max-height: 0;
