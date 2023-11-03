@@ -38,8 +38,28 @@
 .informations__container2__descriptions .item__block__title {
   padding: 10px 20px 10px 10px;
 }
+.informations__container2__descriptions .item__txt__open {
+  min-height: 200px;
+  max-height: 1000px;
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .informations__container2__descriptions .item__txt__open {
+    min-height: 300px;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 768px) {
+  .informations__container2__descriptions .item__txt__open {
+    min-height: 400px;
+  }
+}
+@media all and (max-width: 640px) {
+  .informations__container2__descriptions .item__txt__open {
+    min-height: none;
+  }
+}
 .informations__container2__equipments {
   width: 100%;
+  min-height: 100%;
 }
 .informations__container2__equipments .item__block {
   border-radius: 10px;
@@ -50,14 +70,32 @@
 .informations__container2__equipments .item__txt {
   min-width: 100%;
   padding: 0px;
-  min-height: 100%;
 }
-.informations__container2__equipments ul {
+.informations__container2__equipments .item__txt__open {
+  min-height: 200px;
+  max-height: 1000px;
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .informations__container2__equipments .item__txt__open {
+    min-height: 300px;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 768px) {
+  .informations__container2__equipments .item__txt__open {
+    min-height: 400px;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 768px) and (max-width: 640px) {
+  .informations__container2__equipments .item__txt__open {
+    min-height: none;
+  }
+}
+.informations__container2__equipments .item__txt__open ul {
   margin: 0px;
-  padding: 10px;
+  padding: 0px;
   list-style-type: none;
 }
-.informations__container2 h3 {
+.informations__container2__equipments .item__txt h3 {
   font-weight: normal;
 }
 

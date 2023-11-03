@@ -1,4 +1,4 @@
-.container {
+.containera {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,27 +7,27 @@
   margin: 50px 100px 100px 100px;
 }
 @media all and (min-width: 1441px) {
-  .container {
+  .containera {
     margin: 50px 120px;
   }
 }
 @media all and (min-width: 1025px) and (max-width: 1440px) {
-  .container {
+  .containera {
     margin: 50px 100px;
   }
 }
 @media all and (min-width: 769px) and (max-width: 1024px) {
-  .container {
+  .containera {
     margin: 30px 75px;
   }
 }
 @media all and (min-width: 641px) and (max-width: 768px) {
-  .container {
+  .containera {
     margin: 25px 50px;
   }
 }
 @media all and (max-width: 640px) {
-  .container {
+  .containera {
     margin: 20px 20px;
   }
 }

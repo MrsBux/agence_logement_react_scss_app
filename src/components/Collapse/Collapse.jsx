@@ -6,41 +6,28 @@ import arrowback from "../../assets/arrow_back.svg";
 function Collapse({ title, description }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  return isOpen ? (
+  return (
     <div className="item">
-      <div className="item__block item__block__opened">
+      <div className={`item__block ${isOpen ? "item__block__opened" : ""}`}>
         <h3 className="item__block__title"> {title} </h3>
 
         <button
           className="item__block__button"
-          onClick={() => setIsOpen(false)}
+          onClick={() => setIsOpen(!isOpen)}
         >
-          {" "}
           <img
-            src={arrowup}
-            alt="bouton ouverture"
+            src={isOpen ? arrowback : arrowup}
+            alt={isOpen ? "bouton fermeture" : "bouton ouverture"}
             className="item__block__button__img"
-          ></img>{" "}
+          ></img>
         </button>
       </div>
-      <div className="item__txt">
+      <div className={`item__txt ${isOpen ? "item__txt__open" : ""}`}>
+        {/* <div className="item__txt__jointure"> :</div> */}
         <p className="item__txt__description"> {description} </p>
       </div>{" "}
     </div>
-  ) : (
-    <div className="item">
-      <div className="item__block ">
-        <h3 className="item__block__title"> {title} </h3>
-
-        <button className="item__block__button" onClick={() => setIsOpen(true)}>
-          <img
-            src={arrowback}
-            alt="bouton fermeture"
-            className="item__block__button__img"
-          ></img>{" "}
-        </button>
-      </div>
-    </div>
   );
 }
+
 export default Collapse;

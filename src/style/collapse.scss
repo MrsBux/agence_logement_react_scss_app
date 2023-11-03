@@ -26,24 +26,32 @@ $main-color: #ff6060;
   }
 
   &__txt {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.5s ease;
     background-color: #f6f6f6;
     color: $main-color;
-    border-radius: 0px 0px 5px 5px;
-    font-size: 18px;
-    padding: 18px;
-    width: fit-content;
     border-radius: 0px 0px 10px 10px;
 
-    @media all and (min-width: 769px) and (max-width: 1024px) {
-      font-size: 16px;
+    &__description {
+      font-size: 18px;
+      padding: 18px;
     }
 
-    @media all and (min-width: 641px) and (max-width: 768px) {
-      font-size: 16px;
-    }
+    &__open {
+      max-height: 1000px;
 
-    @media all and (max-width: 640px) {
-      font-size: 14px;
+      @media all and (min-width: 769px) and (max-width: 1024px) {
+        font-size: 16px;
+      }
+
+      @media all and (min-width: 641px) and (max-width: 768px) {
+        font-size: 16px;
+      }
+
+      @media all and (max-width: 640px) {
+        font-size: 15px;
+      }
     }
   }
 }

@@ -9,7 +9,7 @@ function Apropos() {
   const menuItems = Array.isArray(datasApropos) ? datasApropos : [];
 
   return (
-    <div className="container">
+    <div className="containera">
       <div className="banner">
         <Banner
           key="img-banner-apropos"
