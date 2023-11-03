@@ -16,6 +16,10 @@ function Carrousel({ logementId, logement, pictures }) {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % pictures.length);
   };
 
+  const compteur = () => {
+    return `${currentImageIndex}/${pictures.lenght}`;
+  };
+
   return (
     <div className="carroussel">
       {logementId === "cb02d69b" ? (

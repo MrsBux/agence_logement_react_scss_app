@@ -6,16 +6,17 @@ function Header() {
   return (
     <header>
       <div className="App-logo">
-        <NavLink exact to="/" activeClassName="active">
+        <NavLink to="/" activeclassname="active" exact="true">
+          {" "}
           <img src={logo} alt="logo kasa" />
         </NavLink>
       </div>
 
       <nav>
-        <NavLink exact to="/" activeClassName="active">
+        <NavLink to="/" activeclassname="active">
           Accueil
         </NavLink>
-        <NavLink to="/apropos" activeClassName="active">
+        <NavLink to="/apropos" activeclassname="active">
           A propos
         </NavLink>
       </nav>
