@@ -8,11 +8,21 @@
   justify-content: center;
   align-items: center;
 }
+@media all and (max-width: 640px) {
+  .tagbox {
+    padding: 2.5px 5px;
+  }
+}
 .tagbox__name {
   color: white;
   font-size: 14px;
   text-align: center;
   margin: 0px;
+}
+@media all and (max-width: 640px) {
+  .tagbox__name {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=tag.css.map */

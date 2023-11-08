@@ -11,10 +11,20 @@
   padding: 0px;
   margin: 0px;
 }
+@media all and (max-width: 640px) {
+  .title__name {
+    font-size: 18px;
+  }
+}
 .title__location {
   font-size: 18px;
   padding: 0px;
   margin: 0px;
+}
+@media all and (max-width: 640px) {
+  .title__location {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=title.css.map */

@@ -12,11 +12,17 @@ $main-color: #ff6060;
     font-size: 36px;
     padding: 0px;
     margin: 0px;
+    @media all and (max-width: 640px) {
+      font-size: 18px;
+    }
   }
 
   &__location {
     font-size: 18px;
     padding: 0px;
     margin: 0px;
+    @media all and (max-width: 640px) {
+      font-size: 14px;
+    }
   }
 }
