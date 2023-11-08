@@ -4,31 +4,20 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin: 50px 100px 100px 100px;
-}
-@media all and (min-width: 1441px) {
-  .containera {
-    margin: 50px 120px;
-  }
-}
-@media all and (min-width: 1025px) and (max-width: 1440px) {
-  .containera {
-    margin: 50px 100px;
-  }
 }
 @media all and (min-width: 769px) and (max-width: 1024px) {
   .containera {
-    margin: 30px 75px;
+    gap: 40px;
   }
 }
 @media all and (min-width: 641px) and (max-width: 768px) {
   .containera {
-    margin: 25px 50px;
+    gap: 30px;
   }
 }
 @media all and (max-width: 640px) {
   .containera {
-    margin: 20px 20px;
+    gap: 20px;
   }
 }
 
@@ -46,6 +35,35 @@
   width: 75%;
   font-size: 24px;
 }
+@media all and (min-width: 1025px) and (max-width: 1440px) {
+  .menu {
+    width: 75%;
+    gap: 40px;
+    font-size: 20px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .menu {
+    width: 75%;
+    gap: 30px;
+    font-size: 18px;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 768px) {
+  .menu {
+    width: 85%;
+    gap: 25px;
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 640px) {
+  .menu {
+    gap: 20px;
+    width: 100%;
+    max-width: 335px;
+    font-size: 13px;
+  }
+}
 .menu .item__block {
   border-radius: 5px;
 }
@@ -54,21 +72,6 @@
 }
 .menu h3 {
   font-weight: normal;
-}
-@media all and (min-width: 769px) and (max-width: 1024px) {
-  .menu {
-    font-size: 22px;
-  }
-}
-@media all and (min-width: 641px) and (max-width: 768px) {
-  .menu {
-    font-size: 18px;
-  }
-}
-@media all and (max-width: 640px) {
-  .menu {
-    font-size: 16px;
-  }
 }
 
 /*# sourceMappingURL=apropos.css.map */

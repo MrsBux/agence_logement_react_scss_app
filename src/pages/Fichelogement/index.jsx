@@ -14,10 +14,12 @@ function Fichelogement() {
     return null;
   }
   return (
-    <div className="section_logement">
-      <Carrousel logementId={id} logement={logement} pictures={pictures} />
-      <Informations logementId={id} />
-    </div>
+    <main>
+      <div className="section_logement">
+        <Carrousel logementId={id} logement={logement} pictures={pictures} />
+        <Informations logementId={id} />
+      </div>
+    </main>
   );
 }
 

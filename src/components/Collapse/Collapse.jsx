@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../../style/build/collapse.css";
-import arrowup from "../../assets/arrow_up.svg";
-import arrowback from "../../assets/arrow_back.svg";
+import arrowback from "../../assets/arrow_up.svg";
+import arrowup from "../../assets/arrow_back.svg";
 
 function Collapse({ title, description }) {
   const [isOpen, setIsOpen] = useState(false);

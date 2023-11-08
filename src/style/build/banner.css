@@ -12,12 +12,23 @@ section {
   z-index: 1;
   max-height: 225px;
 }
+@media all and (max-width: 640px) {
+  .banner__calc {
+    max-height: 111px;
+  }
+}
 .banner__calc__img {
   border-radius: 25px;
   height: 223px;
   width: 100%;
   object-fit: cover;
   filter: brightness(70%);
+}
+@media all and (max-width: 640px) {
+  .banner__calc__img {
+    max-width: 335px;
+    max-height: 111px;
+  }
 }
 .banner__calc__txt__home {
   position: relative;
@@ -39,6 +50,11 @@ section {
 }
 @media all and (max-width: 640px) {
   .banner__calc__txt__home {
+    max-width: 230px;
+    position: relative;
+    bottom: 80px;
+    left: 20%;
+    z-index: 2;
     font-size: 24px;
   }
 }

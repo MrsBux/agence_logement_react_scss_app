@@ -22,11 +22,17 @@ main {
 @media all and (min-width: 641px) and (max-width: 768px) {
   main {
     margin: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
 @media all and (max-width: 640px) {
   main {
     margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
