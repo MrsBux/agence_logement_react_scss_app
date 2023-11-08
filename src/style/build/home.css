@@ -4,5 +4,30 @@ main {
   flex-direction: column;
   gap: 50px;
 }
+@media all and (min-width: 1441px) {
+  main {
+    margin: 25px 120px;
+  }
+}
+@media all and (min-width: 1025px) and (max-width: 1440px) {
+  main {
+    margin: 25px 100px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  main {
+    margin: 25px 75px;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 768px) {
+  main {
+    margin: 25px 25px;
+  }
+}
+@media all and (max-width: 640px) {
+  main {
+    margin: 20px 20px;
+  }
+}
 
 /*# sourceMappingURL=home.css.map */

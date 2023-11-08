@@ -34,6 +34,11 @@ $main-color: #ff6060;
     color: $main-color;
     border-radius: 0px 0px 10px 10px;
 
+    &__p {
+      padding: 20px;
+      margin: 0px;
+    }
+
     &__description {
       font-size: 18px;
       padding: 18px;

@@ -1,16 +1,17 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Carrousel from "../../components/Carrousel";
 import Informations from "../../components/Informations";
 import datas from "../../datas/data.json";
-import { Navigate } from "react-router-dom";
 
 function Fichelogement() {
   const { id } = useParams();
   const logement = datas.find((logement) => logement.id === id);
   const pictures = logement.pictures;
+  const navigate = useNavigate();
 
   if (!logement) {
-    return <Navigate to="*" replace={true} />;
+    navigate("/*");
+    return null;
   }
   return (
     <div className="section_logement">

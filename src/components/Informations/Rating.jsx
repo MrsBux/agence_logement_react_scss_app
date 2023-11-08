@@ -1,6 +1,6 @@
 import "../../style/build/rating.css";
 import starActive from "../../assets/star-active-3.svg";
-import starInactive from "../../assets/Vector.svg";
+import starInactive from "../../assets/star-inactive.svg";
 
 function Rating({ rating }) {
   if (rating >= 0 && rating <= 5) {
