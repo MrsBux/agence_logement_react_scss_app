@@ -14,6 +14,18 @@
     &__prev {
       left: 5%;
     }
+
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+      height: 60px;
+    }
+
+    @media all and (min-width: 641px) and (max-width: 768px) {
+      height: 42px;
+    }
+
+    @media all and (max-width: 640px) {
+      height: 24px;
+    }
   }
 
   &__cover {
@@ -23,6 +35,18 @@
     height: 415px;
     object-fit: cover;
     position: relative;
+
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+      height: 365px;
+    }
+
+    @media all and (min-width: 641px) and (max-width: 768px) {
+      height: 310px;
+    }
+
+    @media all and (max-width: 640px) {
+      height: 255px;
+    }
   }
 
   &__counter {
@@ -31,5 +55,30 @@
     color: white;
     font-size: 24px;
     top: 357px;
+
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+      top: 80%;
+    }
+
+    @media all and (max-width: 768px) {
+      display: none;
+    }
   }
 }
+
+// @media all and (min-width: 1441px) {
+//   margin: 25px 120px;}
+
+// @media all and (min-width: 1025px) and (max-width: 1440px) {
+// }
+
+// @media all and (min-width: 769px) and (max-width: 1024px) {
+
+// }
+
+// @media all and (min-width: 641px) and (max-width: 768px) {
+
+// }
+
+// @media all and (max-width: 640px) {
+// }

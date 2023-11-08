@@ -15,6 +15,21 @@
 .carroussel__arrow__prev {
   left: 5%;
 }
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .carroussel__arrow {
+    height: 60px;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 768px) {
+  .carroussel__arrow {
+    height: 42px;
+  }
+}
+@media all and (max-width: 640px) {
+  .carroussel__arrow {
+    height: 24px;
+  }
+}
 .carroussel__cover {
   z-index: 1;
   border-radius: 25px;
@@ -23,12 +38,37 @@
   object-fit: cover;
   position: relative;
 }
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .carroussel__cover {
+    height: 365px;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 768px) {
+  .carroussel__cover {
+    height: 310px;
+  }
+}
+@media all and (max-width: 640px) {
+  .carroussel__cover {
+    height: 255px;
+  }
+}
 .carroussel__counter {
   position: absolute;
   z-index: 3;
   color: white;
   font-size: 24px;
   top: 357px;
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .carroussel__counter {
+    top: 80%;
+  }
+}
+@media all and (max-width: 768px) {
+  .carroussel__counter {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=carrousel.css.map */
