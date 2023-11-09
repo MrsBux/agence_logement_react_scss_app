@@ -28,7 +28,7 @@
     align-items: center;
   }
 }
-@media all and (min-width: 769px) and (max-width: 1024px) {
+@media all and (min-width: 811px) and (max-width: 1024px) {
   .gallery__container {
     padding: 30px;
     display: grid;
@@ -38,7 +38,7 @@
     align-items: center;
   }
 }
-@media all and (min-width: 641px) and (max-width: 768px) {
+@media all and (min-width: 641px) and (max-width: 810px) {
   .gallery__container {
     width: 100%;
     background-color: #ffffff;

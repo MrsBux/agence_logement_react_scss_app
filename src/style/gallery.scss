@@ -29,7 +29,7 @@ $main-color: #ff6060;
       align-items: center;
     }
 
-    @media all and (min-width: 769px) and (max-width: 1024px) {
+    @media all and (min-width: 811px) and (max-width: 1024px) {
       padding: 30px;
       display: grid;
       gap: 30px;
@@ -38,7 +38,7 @@ $main-color: #ff6060;
       align-items: center;
     }
 
-    @media all and (min-width: 641px) and (max-width: 768px) {
+    @media all and (min-width: 641px) and (max-width: 810px) {
       width: 100%;
       background-color: #ffffff;
       padding: 0px;

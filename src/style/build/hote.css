@@ -4,6 +4,12 @@
   justify-content: flex-start;
   gap: 20px;
 }
+@media all and (max-width: 640px) {
+  .host {
+    width: 135px;
+    height: 33px;
+  }
+}
 .host__container1 {
   display: flex;
   flex-direction: column;
@@ -14,17 +20,72 @@
   font-size: 18px;
   margin: 0px;
 }
+.host__container1 p {
+  margin: 0px;
+}
+@media all and (min-width: 1025px) and (max-width: 1120px) {
+  .host__container1 {
+    font-size: 16px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .host__container1 {
+    font-size: 15px;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 768px) {
+  .host__container1 {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 640px) {
+  .host__container1 {
+    font-size: 13px;
+    height: 33px;
+    justify-content: center;
+  }
+}
 .host__container2 {
   height: 80px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+@media all and (max-width: 640px) {
+  .host__container2 {
+    height: 33px;
+    align-items: center;
+  }
 }
 .host__container2__picture {
   max-width: 64px;
   max-height: 64px;
   object-fit: cover;
   border-radius: 50%;
+}
+@media all and (min-width: 1025px) and (max-width: 1120px) {
+  .host__container2__picture {
+    max-width: 56px;
+    max-height: 56px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .host__container2__picture {
+    max-width: 48px;
+    max-height: 48px;
+  }
+}
+@media all and (min-width: 641px) and (max-width: 768px) {
+  .host__container2__picture {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+@media all and (max-width: 640px) {
+  .host__container2__picture {
+    max-width: 32px;
+    max-height: 32px;
+  }
 }
 
 /*# sourceMappingURL=hote.css.map */

@@ -1,4 +1,14 @@
 .informations {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+  @media all and (max-width: 640px) {
+    padding-top: 10px;
+    gap: 10px;
+  }
   &__container1 {
     display: flex;
     flex-direction: row;
@@ -18,8 +28,9 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
+
       @media all and (max-width: 640px) {
-        padding-top: 20px;
+        gap: 10px;
       }
 
       &__taglist {
@@ -28,16 +39,25 @@
         justify-content: flex-start;
         align-items: center;
         gap: 20px;
+
+        @media all and (max-width: 640px) {
+          gap: 10px;
+        }
       }
     }
 
     &__utiles {
+      display: flex;
+      flex-direction: column;
+
       @media all and (max-width: 640px) {
+        width: 100%;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         gap: 20px;
+        padding-bottom: 10px;
       }
     }
   }
@@ -48,7 +68,6 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 76px;
-    margin-top: 50px;
     font-size: 18px;
 
     @media all and (max-width: 640px) {
@@ -57,7 +76,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 30px;
+      gap: 20px;
     }
 
     &__descriptions {

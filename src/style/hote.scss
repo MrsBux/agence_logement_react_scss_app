@@ -6,6 +6,11 @@ $main-color: #ff6060;
   justify-content: flex-start;
   gap: 20px;
 
+  @media all and (max-width: 640px) {
+    width: 135px;
+    height: 33px;
+  }
+
   &__container1 {
     display: flex;
     flex-direction: column;
@@ -15,18 +20,66 @@ $main-color: #ff6060;
     height: 80px;
     font-size: 18px;
     margin: 0px;
+
+    p {
+      margin: 0px;
+    }
+
+    @media all and (min-width: 1025px) and (max-width: 1120px) {
+      font-size: 16px;
+    }
+
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+      font-size: 15px;
+    }
+
+    @media all and (min-width: 641px) and (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media all and (max-width: 640px) {
+      font-size: 13px;
+      height: 33px;
+      justify-content: center;
+    }
   }
 
   &__container2 {
     height: 80px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
+    @media all and (max-width: 640px) {
+      height: 33px;
+      align-items: center;
+    }
+
     &__picture {
       max-width: 64px;
       max-height: 64px;
       object-fit: cover;
       border-radius: 50%;
+
+      @media all and (min-width: 1025px) and (max-width: 1120px) {
+        max-width: 56px;
+        max-height: 56px;
+      }
+
+      @media all and (min-width: 769px) and (max-width: 1024px) {
+        max-width: 48px;
+        max-height: 48px;
+      }
+
+      @media all and (min-width: 641px) and (max-width: 768px) {
+        max-width: 40px;
+        max-height: 40px;
+      }
+
+      @media all and (max-width: 640px) {
+        max-width: 32px;
+        max-height: 32px;
+      }
     }
   }
 }

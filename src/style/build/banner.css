@@ -5,6 +5,9 @@ section {
 .banner {
   text-align: center;
   margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .banner__calc {
   width: 100%;
@@ -15,6 +18,7 @@ section {
 @media all and (max-width: 640px) {
   .banner__calc {
     max-height: 111px;
+    max-width: 335px;
   }
 }
 .banner__calc__img {
@@ -28,32 +32,41 @@ section {
   .banner__calc__img {
     max-width: 335px;
     max-height: 111px;
+    border-radius: 10px;
   }
 }
 .banner__calc__txt__home {
-  position: relative;
-  bottom: 140px;
+  position: absolute;
+  bottom: 35%;
+  left: 20%;
   z-index: 2;
   font-size: 48px;
   color: white;
   margin: 0px;
 }
+@media all and (min-width: 1025px) and (max-width: 1120px) {
+  .banner__calc__txt__home {
+    left: 12%;
+  }
+}
 @media all and (min-width: 769px) and (max-width: 1024px) {
   .banner__calc__txt__home {
     font-size: 36px;
+    left: 10%;
   }
 }
 @media all and (min-width: 641px) and (max-width: 768px) {
   .banner__calc__txt__home {
     font-size: 30px;
+    left: 10%;
   }
 }
 @media all and (max-width: 640px) {
   .banner__calc__txt__home {
+    text-align: left;
     max-width: 230px;
-    position: relative;
-    bottom: 80px;
-    left: 20%;
+    left: 5%;
+    bottom: 20%;
     z-index: 2;
     font-size: 24px;
   }

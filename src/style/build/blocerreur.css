@@ -1,10 +1,17 @@
 .error {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   color: #ff6060;
   margin: 117.5px;
+  width: fit-content;
+}
+@media all and (max-width: 640px) {
+  .error {
+    margin: 100px 20px;
+  }
 }
 .error__code {
   font-size: 288px;
@@ -45,7 +52,7 @@
   .error__txt {
     font-size: 18px;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 55px;
   }
 }
 .error__link {
@@ -60,6 +67,7 @@
 @media all and (max-width: 640px) {
   .error__link {
     font-size: 14px;
+    padding-bottom: 50px;
   }
 }
 
