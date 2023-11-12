@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Manrope:wght@300&family=Montserrat:wght@200;500&family=Raleway:wght@400;700&display=swap");
 footer {
+  margin-top: 50px;
   padding: 50px 0px 20px 0px;
   width: 100%;
   display: flex;
@@ -11,12 +12,12 @@ footer {
 }
 @media all and (min-width: 769px) and (max-width: 1024px) {
   footer {
-    padding: 30px 0px 30px 0px;
+    padding: 50px 0px 50px 0px;
   }
 }
 @media all and (min-width: 641px) and (max-width: 768px) {
   footer {
-    padding: 20px 0px 40px 0px;
+    padding: 50px 0px 50px 0px;
   }
 }
 @media all and (max-width: 640px) {
