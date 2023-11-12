@@ -6,14 +6,14 @@ function Header() {
   return (
     <header>
       <div className="App-logo">
-        <NavLink to="/" activeclassname="active" exact="true">
+        <NavLink to="/kasa-app/" activeclassname="active" exact="true">
           {" "}
           <img src={logo} alt="logo kasa" />
         </NavLink>
       </div>
 
       <nav>
-        <NavLink to="/" activeclassname="active">
+        <NavLink to="/kasa-app/" activeclassname="active">
           Accueil
         </NavLink>
         <NavLink to="/apropos" activeclassname="active">

@@ -15,7 +15,7 @@ ReactDOM.render(
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/kasa-app/" element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/fichelogement/:id" element={<Fichelogement />} />
         <Route path="*" element={<Error />} />
