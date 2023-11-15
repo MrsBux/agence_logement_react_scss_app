@@ -3,7 +3,7 @@ import "../../style/build/carrousel.css";
 import leftArrow from "../../assets/VectorP.svg";
 import rightArrow from "../../assets/Vector2.svg";
 
-function Carrousel({ logementId, logement, pictures }) {
+function Carrousel({ logementId, pictures }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const previousImage = () => {
@@ -22,12 +22,8 @@ function Carrousel({ logementId, logement, pictures }) {
 
   return (
     <div className="carroussel">
-      {logementId === "cb02d69b" ? (
-        <img
-          className="carroussel__cover"
-          src={pictures[currentImageIndex]}
-          alt="logement"
-        />
+      {pictures.length === 1 ? (
+        <img className="carroussel__cover" src={pictures[0]} alt="logement" />
       ) : (
         <>
           <img

@@ -1,7 +1,7 @@
 import "../../style/build/informations.css";
 import Hote from "./Hote";
 import Rating from "./Rating";
-import Tag from "./TagList/Tag/Tag";
+import Tag from "./Tag";
 import Collapse from "../Collapse/Collapse";
 import Title from "./Title";
 import datas from "../../datas/data.json";

@@ -1,4 +1,4 @@
-import "../../../../style/build/tag.css";
+import "../../style/build/tag.css";
 
 function Tag({ tag }) {
   return (
