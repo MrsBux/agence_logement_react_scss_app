@@ -55,7 +55,7 @@ $main-color: #ff6060;
   &__txt {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1.5s ease;
+    transition: max-height 2s ease-in-out;
     background-color: #f6f6f6;
     color: $main-color;
     border-radius: 0px 0px 10px 10px;

@@ -23,7 +23,6 @@ function Collapse({ title, description }) {
         </button>
       </div>
       <div className={`item__txt ${isOpen ? "item__txt__open" : ""}`}>
-        {/* <div className="item__txt__jointure"> :</div> */}
         <div className="item__txt__p"> {description} </div>
       </div>{" "}
     </div>
