@@ -13,13 +13,15 @@ import Footer from "./components/Footer";
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/kasa-app/" element={<Home />} />
-        <Route path="/apropos" element={<Apropos />} />
-        <Route path="/fichelogement/:id" element={<Fichelogement />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <div className="conteneur_calc">
+        <Header />
+        <Routes>
+          <Route path="/kasa-app/" element={<Home />} />
+          <Route path="/apropos" element={<Apropos />} />
+          <Route path="/fichelogement/:id" element={<Fichelogement />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </div>
       <Footer />
     </Router>
   </React.StrictMode>,

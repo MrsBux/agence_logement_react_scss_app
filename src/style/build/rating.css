@@ -7,6 +7,12 @@
   gap: 0px;
 }
 
+@media all and (min-width: 1025px) and (max-width: 1327px) {
+  .container img {
+    width: 32px;
+    height: 32px;
+  }
+}
 @media all and (min-width: 769px) and (max-width: 1024px) {
   .container img {
     width: 30px;

@@ -84,3 +84,24 @@ main {
     gap: 20px;
   }
 }
+
+.conteneur_calc {
+  min-height: calc(100vh - 220px);
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .conteneur_calc {
+    min-height: calc(100vh - 225px);
+  }
+}
+@media all and (min-width: 641px) and (max-width: 768px) {
+  .conteneur_calc {
+    min-height: calc(100vh - 260px);
+  }
+}
+
+@media all and (max-width: 641px) {
+  .conteneur_calc {
+    min-height: calc(100vh - 309px);
+  }
+}
