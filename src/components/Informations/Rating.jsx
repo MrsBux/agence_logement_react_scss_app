@@ -34,7 +34,7 @@ function Rating({ rating }) {
     return (
       <div>
         {" "}
-        <p> note</p>
+        <p> note invalide</p>
       </div>
     );
   }

@@ -3,7 +3,7 @@ import "../../style/build/carrousel.css";
 import leftArrow from "../../assets/VectorP.svg";
 import rightArrow from "../../assets/Vector2.svg";
 
-function Carrousel({ logementId, pictures }) {
+function Carrousel({ pictures }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const previousImage = () => {

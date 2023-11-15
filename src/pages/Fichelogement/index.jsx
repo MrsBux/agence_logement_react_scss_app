@@ -29,7 +29,7 @@ function Fichelogement() {
   return (
     <main>
       <div className="section_logement">
-        <Carrousel logementId={id} logement={logement} pictures={pictures} />
+        <Carrousel pictures={pictures} />
         <Informations logementId={id} />
       </div>
     </main>
