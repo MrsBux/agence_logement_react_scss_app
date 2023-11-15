@@ -8,8 +8,10 @@ function Home() {
 
   return (
     <main>
-      <Banner key="img-banner-home" img={ImageBannerHome} title={titleHome} />
-      <Gallery />
+      <div className="home">
+        <Banner key="img-banner-home" img={ImageBannerHome} title={titleHome} />
+        <Gallery />
+      </div>
     </main>
   );
 }
